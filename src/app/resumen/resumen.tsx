@@ -14,7 +14,7 @@ export default function Resumen() {
     },
     {
       school: "Platzi - cursos programación",
-      year: "2024-2024",
+      year: "2023-2023",
       description: "",
     },
     {
@@ -55,6 +55,14 @@ export default function Resumen() {
     {
       title:"Bases de Datos",
       skills: ["SQL Server", "Oracle"]
+    },
+    {
+      title: "Servicios en la Nuber",
+      skills: ["Azure", "AWS"]
+    },
+    {
+      title:"Metodologías de Trabajo",
+      skills: ["Agile", "Scrum"]
     },
     {
       title: "Control de Versiones",
