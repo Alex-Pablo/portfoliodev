@@ -1,0 +1,119 @@
+.wrapperResume{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: auto;
+    height: 80dvh;
+}
+
+
+.containerEducations{
+    position: relative;
+    width: 100%;
+}
+
+.wrapperTitleInfo{
+    display: grid;
+    grid-template-columns:  60px 1fr;
+    align-items: center;
+}
+
+.container_iconWrapper{
+    display: inline-block;
+    padding: 1px; 
+    border-radius: 10px; 
+    background: linear-gradient(-20deg, #31363f44 60%, rgba(255, 255, 255, 0.514) 100%); 
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    width: 40px;
+}
+
+.container_icon{
+    padding: 7px 9px; 
+    border-radius: 10px; 
+    background: #31363F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapperListEduactions{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.school{
+    color: #C9CECF;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.year{
+    color: #70C6CB;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.description{
+    color: #c9cecfe1;
+    font-weight: 400;
+    font-size: 0.8rem; 
+}
+
+.wrapperLine{
+    width: 40px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+}
+
+.line{
+    border-radius: 10px;
+    width: 1px;
+    height: 100%;
+    background-color: #70C6CB;
+    margin-top: -13px;
+}
+
+.wrapperPoint{
+    display: flex;
+    justify-content: center;
+    width: 40px;
+}
+.point{
+    background-color: #70C6CB;
+    width: 9px;
+    height: 9px;
+    border-radius: 100%;
+}
+
+
+.containerSkills{
+    padding:  10px 0px 0px 60px;
+}
+.wrapperOutSkill{
+    display: inline-block;
+    padding: 1px; 
+    border-radius: 10px; 
+    background: linear-gradient(-20deg, #31363f44 60%, rgba(255, 255, 255, 0.514) 100%); 
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    width: 100%;
+}
+
+.wrapperInnerSkill{
+    padding: 7px 15px; 
+    border-radius: 10px; 
+    background: #31363F;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.wrapperSkills p{
+    padding: 0px 0px 0px 10px ;
+    font-weight: 600;
+}
+

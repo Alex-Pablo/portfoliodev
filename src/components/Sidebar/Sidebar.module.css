@@ -1,0 +1,121 @@
+.wrapper{
+    background-color: var(--background-second);
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper_information{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.wrapper_profile{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper_profile h1{
+    margin-top: 20px;
+    font-size:  1.5rem;
+    font-weight:600;
+}
+
+.wrapperJobouter {
+    display: inline-block;
+    padding: 1px; 
+    border-radius: 10px; 
+    background: linear-gradient(-20deg, #31363f44 60%, rgba(255, 255, 255, 0.514) 100%); 
+}
+
+.wrapperJobinner {
+    padding: 3px 10px; 
+    border-radius: 10px; 
+    background: #31363F;
+}
+
+.wrapperJobinner .titleJob{
+    font-size: 0.8rem;
+    font-weight:400;
+}
+
+.divisionBar{
+    width: 100%;
+    height: 2px;
+    background-color:rgba(122, 172, 175, 0.38) ;
+}
+
+/* img profile */
+.wrapper_img{
+    background-color: var(--background-third) ;
+    display: flex;
+    justify-content: center;
+    width: 90%; 
+    border-radius: 10px; 
+}
+
+.wrapper_img img{
+    filter: saturate(60%) contrast(80%) contrast(90%);
+    width: 50%;
+}
+
+.wrapper_img img:hover{
+    filter: saturate(70%) contrast(90%) contrast(100%);
+}
+
+
+
+.card{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.container_iconWrapper{
+    display: inline-block;
+    padding: 1px; 
+    border-radius: 10px; 
+    background: linear-gradient(-20deg, #31363f44 60%, rgba(255, 255, 255, 0.514) 100%); 
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.container_icon{
+    padding: 7px 9px; 
+    border-radius: 10px; 
+    width: 35px;
+    background: #31363F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleInfo{
+    color: #ACB0B5;
+    font-weight: 400;
+    font-size: 0.76rem;
+}
+
+.info{
+    color: #cdd1d6;
+    font-size: 0.78rem;
+    font-weight: 500;
+}
+
+
+
+
+.wrapper_socialmedia{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.wrapper_socialmedia img{
+    cursor: pointer;
+}
