@@ -1,4 +1,5 @@
 "use client";
+import { motion } from "framer-motion"
 import styles from "./resumen.module.css";
 import Image from "next/image";
 import EducationIcon from "@/../public/icon/Education.svg";
@@ -82,7 +83,13 @@ export default function Resumen() {
     <div className={styles.wrapperResume}>
       <div>
         <div className={styles.wrapperTitleInfo}>
-          <div className={styles.container_iconWrapper}>
+          <motion.div 
+            animate={{
+            scale:[1,1.5,1.5,1,1],
+            rotate: [0,0,90,0,0],
+            borderRadius: ["20%", "20%", "50%", "50%", "30%"],
+          }} 
+          className={styles.container_iconWrapper}>
             <div className={styles.container_icon}>
               <Image
                 priority
@@ -92,7 +99,7 @@ export default function Resumen() {
                 width={20}
               />
             </div>
-          </div>
+          </motion.div>
 
           <p>Educación</p>
         </div>
@@ -121,7 +128,13 @@ export default function Resumen() {
 
       <div>
         <div className={styles.wrapperTitleInfo}>
-          <div className={styles.container_iconWrapper}>
+          <motion.div
+          animate={{
+            scale:[1,1.5,1.5,1,1],
+            rotate: [0,0,90,0,0],
+            borderRadius: ["20%", "20%", "50%", "50%", "30%"],
+          }} 
+          className={styles.container_iconWrapper}>
             <div className={styles.container_icon}>
               <Image
                 priority
@@ -131,7 +144,7 @@ export default function Resumen() {
                 width={20}
               />
             </div>
-          </div>
+          </motion.div>
 
           <p>Experiencia</p>
         </div>
@@ -160,7 +173,13 @@ export default function Resumen() {
 
       <div>
         <div className={styles.wrapperTitleInfo}>
-          <div className={styles.container_iconWrapper}>
+          <motion.div 
+          animate={{
+            scale:[1,1.5,1.5,1,1],
+            rotate: [0,0,90,0,0],
+            borderRadius: ["20%", "20%", "50%", "50%", "30%"],
+          }} 
+          className={styles.container_iconWrapper}>
             <div className={styles.container_icon}>
               <Image
                 priority
@@ -170,14 +189,18 @@ export default function Resumen() {
                 width={20}
               />
             </div>
-          </div>
+          </motion.div>
           
           <p>Habilidades técnicas</p>
         </div>
 
         <div className={styles.containerSkills}>
-            <div className={styles.wrapperOutSkill}>
-                <div className={styles.wrapperInnerSkill}>
+            <div  className={styles.wrapperOutSkill}>
+                <motion.div 
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                className={styles.wrapperInnerSkill}>
 
                     {
                         listSkills.map((info, i) =>(
@@ -193,7 +216,7 @@ export default function Resumen() {
                             </div>
                         ))
                     }
-                </div>
+                </motion.div>
             </div>
         </div>
       </div>

@@ -60,12 +60,13 @@
 }
 
 .wrapper_img img{
-    filter: saturate(60%) contrast(80%) contrast(90%);
+    filter: saturate(70%) contrast(90%) contrast(90%);
     width: 50%;
+    user-select: none !important;
 }
 
 .wrapper_img img:hover{
-    filter: saturate(70%) contrast(90%) contrast(100%);
+    filter: saturate(80%) contrast(100%) contrast(100%);
 }
 
 

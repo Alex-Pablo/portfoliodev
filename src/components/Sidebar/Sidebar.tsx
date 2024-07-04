@@ -1,4 +1,5 @@
 "use client"
+import { motion } from "framer-motion"
 import styles from "./Sidebar.module.css";
 import Image from "next/image";
 import Twitter from "@/../public/icon/Twitter.svg";
@@ -53,11 +54,17 @@ export default function Sidebar(){
                 {personalInformation.map((element, index) => (
                     <div key={index} className={styles.card}>
 
-                        <div className={styles.container_iconWrapper}>
+                        <motion.div 
+                        animate={{
+                            scale:[1,1.3,1.3,1,1],
+                            rotate: [0,0,90,0,0],
+                            borderRadius: ["20%", "20%", "50%", "50%", "30%"],
+                        }} 
+                        className={styles.container_iconWrapper}>
                             <div className={styles.container_icon}>
                                 <Image priority className={styles.imgIcon} src={element.icon} alt="Email"  width={20}/>
                             </div>
-                        </div>
+                        </motion.div>
 
                         <div className={styles.cardInfo}>
                             <p className={styles.titleInfo}>{element?.title}</p>
